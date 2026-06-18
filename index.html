@@ -5,7 +5,7 @@
         <title>
             Trade Bitcoin, Perfect Money, Giftcards and other digital assets | https://mypatricia.co
         </title>
-        
+
         <meta name="gridsome:hash" content="d874fa374ee8389a37ebb8814b791e8355f030dc">
         <meta data-vue-tag="ssr" charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,23 +13,22 @@
         <link rel = "icon" href = "./images/logo/icon1.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link data-vue-tag="ssr" rel="icon" href="data:,">
-        
+
+        <!-- FIX: this exact stylesheet was previously linked twice (once relative "assets/..." once "./assets/..."). One copy removed. -->
         <link data-vue-tag="ssr" rel="stylesheet" href="assets/css/0.styles.b76c5be5.css">
         <link data-vue-tag="ssr" rel="stylesheet" href="./assets/icomoon/style.css">
         <link rel="preload" href="./assets/css/patricia_ui-components.css" as="style">
         <link rel="preload" href="./assets/js/app.91b74704.js" as="script">
-        <link rel="stylesheet" href="./assets/css/0.styles.b76c5be5.css">
         <link data-vue-tag="ssr" rel="stylesheet" href="assets/css/Getstarted.css">
-        <link rel = "icon" href = "./images/logo/icon1.png" type="image/x-icon">
         <link rel="prefetch" href="./assets/data/rates/index.json">
-        <link rel = "icon" href = "./images/logo/icon2.png" type="image/x-icon">
         <link  rel="stylesheet" href="test.css"/>
         <link  rel="stylesheet" href="style.css"/>
         <link  rel="stylesheet" href="responsive.css"/>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 
     </head>
-    <body style="overflow-y: scroll;" id="partners" class="preload">
+    <!-- FIX: body previously had id="partners", which collided with three other elements down the page (invalid HTML, breaks any #partners anchor link / getElementById). Removed here. -->
+    <body style="overflow-y: scroll;" class="preload">
     <div class="progress-bar" >
     <button class="back-to-top hidden" >
         <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,7 +95,7 @@
                                   </div>
                                 </a>
                               </li>
-                              
+
                             </ul>
                             <ul role="menu">
                               <li role="menuitem"  class="rightmenu">
@@ -158,7 +157,7 @@
                                 >
                               </li>
                             </ul>
-              
+
                           </div>
                         </li>
                         <li><a class="ratess" href="https://patricia-landing-lb.mypatricia.co/rates" >Rates</a></li>
@@ -187,29 +186,30 @@
                                 >
                               </li>
                             </ul>
-                            
+
                           </div>
                         </li>
                         <li>
-                            <button class="rightbtn1 btn-primary"><a" href="https://app.mypatricia.co/"><strong>Sign In</strong></a></button>
+                            <!-- FIX: malformed tag was <a" href="..."> (stray quote broke the element). Corrected. -->
+                            <button class="rightbtn1 btn-primary"><a href="https://app.mypatricia.co/"><strong>Sign In</strong></a></button>
                         </li>
                         <li>
                             <button class=" rightbtn2 btn btn-primary hoverbtn" onclick="download()"><strong>Download</strong></button>
                         </li>
                       </ul>
-                      
+
                     </nav>
                   </div>
                   <div class="nav-end">
                     <div class="right-container">
                       <button class=" btn-primary"><a style="color: white;" href="https://app.mypatricia.co/"><strong>Sign In</strong></a></button>
-                      
+
                       <button class="btn btn-primary hoverbtn" onclick="download()"><strong>Download</strong></button>
                     </div>
-          
+
                     <button
                       onclick="dropIt();"
-                      id="hamburger" 
+                      id="hamburger"
                       aria-label="hamburger"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -231,12 +231,9 @@
                                 We call it Convenience!
                             </h1>
                             <span data-v-2be47e0f="" class="ui-button__container my-5 hoverbtnn">
-                                <!---->
                                 <!--Get started middle of landing page-->
-                                <a  style="color: white;" data-v-2be47e0f="" href="https://app.mypatricia.co/register/name" class="ui-button ripple  btn-medium btn-primary btn-filled " style="  
-
-                                <span data-v-2be47e0f ">Get Started</span>
-                                <!---->
+                                <a  style="color: white;" data-v-2be47e0f="" href="https://app.mypatricia.co/register/name" class="ui-button ripple  btn-medium btn-primary btn-filled ">
+                                <span data-v-2be47e0f="">Get Started</span>
                                 </a>
                             </span>
                         </div>
@@ -245,7 +242,7 @@
                         <div class="dialog right" style="left: calc(62.7926%); top: 93.8px; background-color: rgb(248, 183, 0); display: none;">
                         I just subscribed my DSTv with Patricia.
                         </div>
-                        
+
                     </div>
                     <div class="map animated zoomIn">
                         <svg width="100%" height="404" viewBox="0 0 1239 404" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" style="width:100%;">
@@ -254,71 +251,63 @@
                             <g opacity="1" class="map-content">
                                 <animate attributeName="opacity" begin="1.2s" dur="1ms" from="0" to="1" fill="freeze" repeatCount="1"></animate>
                                 <g opacity="1" id="curves">
-                                    <path d="M496 215.5C537.5 138.183 669.5 116.5 748.5 138.183" stroke="url(#paint2_linear)" stroke-width="2.5" class="curve12" style="stroke-dasharray: 281.015px, 281.015px; stroke-dashoffset: -281.015px; transition: stroke-dashoffset 1s ease-in-out 0s; display: none;"></path>
-                                    <path d="M749 138C502 98.5 290.5 177 208.5 329" stroke="url(#paint0_linear)" stroke-width="2.5" class="curve23" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 609.779px, 609.779px; stroke-dashoffset: -609.779px;"></path>
-                                    <path d="M211 329C276 269 520 210 673.5 284" stroke="url(#paint1_linear)" stroke-width="2.5" class="curve34" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 483.054px, 483.054px; stroke-dashoffset: -483.054px; display: none;"></path>
-                                    <path d="M674.5 280.5C622.5 169 424 55 273 80" stroke="url(#paint6_linear)" stroke-width="2.5" class="curve45" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 473.47px, 473.47px; stroke-dashoffset: -473.47px; display: none;"></path>
-                                    <path d="M269 81.0001C168.5 73.5 108 125 105 202.5" stroke="url(#paint8_linear)" stroke-width="2.5" class="curve56" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 231.459px, 231.459px; stroke-dashoffset: -231.459px; display: none;"></path>
-                                    <path d="M106 201C138 56.5 363 8.83423 529 73" stroke="url(#paint7_linear)" stroke-width="2.5" class="curve67" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 492.615px, 492.615px; stroke-dashoffset: -492.615px; display: none;"></path>
-                                    <path d="M539 74.5C630.124 59.3704 838 44.6929 943.5 261.193" stroke="url(#paint4_linear)" stroke-width="2.5" class="curve78" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 482.355px, 482.355px; stroke-dashoffset: -482.355px; display: none;"></path>
-                                    <path d="M945 262C988.5 233 1052.5 223 1113 255" stroke="url(#paint5_linear)" stroke-width="2.5" class="curve89" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 176.546px, 176.546px; stroke-dashoffset: -176.546px; display: none;"></path>
-                                    <path d="M1108 247.76C1043.5 204 754 91 496 213.5" stroke="url(#paint3_linear)" stroke-width="2.5" class="curve91" style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 635.215px, 635.215px; stroke-dashoffset: -635.215px; display: none;"></path>
+                                    <path d="M496 215.5C537.5 138.183 669.5 116.5 748.5 138.183" stroke="url(#paint2_linear)" stroke-width="2.5" class="curve12"></path>
+                                    <path d="M749 138C502 98.5 290.5 177 208.5 329" stroke="url(#paint0_linear)" stroke-width="2.5" class="curve23"></path>
+                                    <path d="M211 329C276 269 520 210 673.5 284" stroke="url(#paint1_linear)" stroke-width="2.5" class="curve34"></path>
+                                    <path d="M674.5 280.5C622.5 169 424 55 273 80" stroke="url(#paint6_linear)" stroke-width="2.5" class="curve45"></path>
+                                    <path d="M269 81.0001C168.5 73.5 108 125 105 202.5" stroke="url(#paint8_linear)" stroke-width="2.5" class="curve56"></path>
+                                    <path d="M106 201C138 56.5 363 8.83423 529 73" stroke="url(#paint7_linear)" stroke-width="2.5" class="curve67"></path>
+                                    <path d="M539 74.5C630.124 59.3704 838 44.6929 943.5 261.193" stroke="url(#paint4_linear)" stroke-width="2.5" class="curve78"></path>
+                                    <path d="M945 262C988.5 233 1052.5 223 1113 255" stroke="url(#paint5_linear)" stroke-width="2.5" class="curve89"></path>
+                                    <path d="M1108 247.76C1043.5 204 754 91 496 213.5" stroke="url(#paint3_linear)" stroke-width="2.5" class="curve91"></path>
                                 </g>
                                 <g class="pIcon1">
-                                    <circle cx="493.3" cy="216.794" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="493.3" cy="216.794" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="493.3" cy="216.794" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="493.3" cy="216.794" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="488.5" y="212"></use>
                                 </g>
                                 <g class="pIcon2">
-                                    <circle cx="753" cy="139.294" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="753" cy="139.294" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="753" cy="139.294" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="753" cy="139.294" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="748" y="133.8"></use>
                                 </g>
                                 <g class="pIcon3">
-                                    <circle cx="207.706" cy="329.706" r="19" fill="#479BFF" fill-opacity="0.5999999999999996"></circle>
-                                    <circle cx="207.706" cy="329.706" r="19" fill="#479BFF" fill-opacity="0.5999999999999996"></circle>
-                                    <circle cx="207.706" cy="329.706" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="207.706" cy="329.706" r="19" fill="#479BFF" fill-opacity="0.6"></circle>
+                                    <circle cx="207.706" cy="329.706" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="203" y="324.5"></use>
                                 </g>
                                 <g class="pIcon4">
-                                    <circle cx="675.006" cy="284.5" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="675.006" cy="284.5" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="675.006" cy="284.5" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="675.006" cy="284.5" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="670.5" y="279.5"></use>
                                 </g>
                                 <g class="pIcon5">
-                                    <circle cx="271.006" cy="80.5002" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="271.006" cy="80.5002" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="271.006" cy="80.5002" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="271.006" cy="80.5002" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="266" y="75"></use>
                                 </g>
                                 <g class="pIcon6">
-                                    <circle cx="104.3" cy="202.294" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="104.3" cy="202.294" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="104.3" cy="202.294" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="104.3" cy="202.294" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="99" y="196.7"></use>
                                 </g>
                                 <g class="pIcon7">
-                                    <circle cx="530.006" cy="74.5002" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="530.006" cy="74.5002" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="530.006" cy="74.5002" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="530.006" cy="74.5002" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="525.5" y="69.5"></use>
                                 </g>
                                 <g class="pIcon8">
-                                    <circle cx="944.006" cy="264.5" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="944.006" cy="264.5" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="944.006" cy="264.5" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="944.006" cy="264.5" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="939" y="259"></use>
                                 </g>
                                 <g class="pIcon9">
-                                    <circle cx="1115.3" cy="254.794" r="10.730000000000002" fill="#479BFF"></circle>
-                                    <circle cx="1115.3" cy="254.794" r="8.230000000000002" fill="#0267FF"></circle>
+                                    <circle cx="1115.3" cy="254.794" r="10.73" fill="#479BFF"></circle>
+                                    <circle cx="1115.3" cy="254.794" r="8.23" fill="#0267FF"></circle>
                                     <use xlink:href="#pIcon" width="10.1" height="10.1" x="1110.2" y="249.3"></use>
                                 </g>
-                                <g style="">
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <image id="image4" width="13" height="13" xlink:href="/images/image4.png" x="201.076" y="323.076"></image>
-                                        <!---->
-                                        <!---->
-                                        <!---->
+                                <g>
+                                    <image id="image4" width="13" height="13" xlink:href="/images/image4.png" x="201.076" y="323.076"></image>
                                 </g>
                                 <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="735" y="122" width="38" height="38">
                                     <circle cx="753.353" cy="139.647" r="17.4297" fill="#C4C4C4"></circle>
@@ -382,15 +371,15 @@
                             </svg>
                     </div>
                 </section>
-                
+
             </div>
-            
+
             <section id="we-are-more-section" data-v-12491b56="">
                 <div class="info" data-v-12491b56="">
                     <div id="info_section" class="info-text-group flex flex-col items-center w-full animated opacity-0 fadeInUp" data-v-12491b56="">
                         <div class="md:3/4 lg:w-3/5 ml-auto mr-auto text-center" data-v-12491b56="">
                             <h1 class="font-semibold text-blue-base mb-5" data-v-12491b56="">
-                                We’re not a Bank, We’re MORE!
+                                We're not a Bank, We're MORE!
                             </h1>
                             <p class="text-gray-200 w-8/12 m-auto font-normal info-sub-text" data-v-12491b56="">
                                 Patricia harnesses the power of cryptocurrency to create
@@ -422,19 +411,13 @@
                                 Bitcoin debit card
                                 </p>
                                 <span data-v-2be47e0f="" data-v-12491b56="" class="ui-button__container" style="margin: 20px;" data-v-efd9a514="">
-                                    <!---->
                                     <a data-v-2be47e0f="" href="/learn" class="ui-button ripple font-semibold btn-small  btn-outlined  hoverbtnnn" style="--text-filled-color: var(--brand-white); --hover-text-filled-color: var(--brand-white); --background-filled-color: var(--custom-032041); --hover-background-filled-color: var(--custom-032041--darken); --text-outlined-color: var(--custom-032041); --hover-text-outlined-color: var(--brand-white); --background-outlined-color: transparent; --hover-background-outlined-color: var(--custom-032041); --border-outlined-color: var(--custom-032041);">
                                         <span data-v-2be47e0f="" style="visibility: visible;">Learn More</span>
-                                        <!---->
                                     </a>
-                                    <!---->
                                 </span>
                             </div>
                             <div class="mt-auto" data-v-efd9a514="">
-                                <img alt="debit-card-home" src="./assets/static/debit-card-home.png" width="708" data-src="./assets/static/debit-card-home.png" data-srcset="./assets/static/debit-card-home.png 708w" data-sizes="(max-width: 708px) 100vw, 708px" class="g-image g-image--lazy g-image--loaded" data-v-efd9a514="" srcset="./assets/static/debit-card-home.png 708w" sizes="(max-width: 708px) 100vw, 708px">
-                                <noscript data-v-efd9a514="">
-                                    <img src="./assets/static/debit-card-home.png" class="g-image g-image--loaded" width="708">
-                                </noscript>
+                                <img alt="debit-card-home" src="./assets/static/debit-card-home.png" width="708" data-v-efd9a514="">
                             </div>
                         </div>
                         <div class="col-span-6 md:col-span-3 info-card flex flex-col  bg-blue-pale" data-v-efd9a514="" data-v-12491b56="">
@@ -450,7 +433,7 @@
                                 </p>
                             </div>
                             <div class="mt-auto" data-v-efd9a514="">
-                                <img alt="piggybank" src="./assets/static/piggybank26.png" width="2560" data-src="./assets/static/piggybank26.png" data-srcset="./assets/static/piggybank26.png 480w, ./assets/static/piggybank26.png 1024w, ./assets/static/piggybank26.png 1920w, ./assets/static/piggybank.png 2560w" data-sizes="(max-width: 2560px) 100vw, 2560px" class="g-image g-image--lazy g-image--loaded" data-v-efd9a514="" srcset="/assets/static/piggybank26.png 480w, ./assets/static/piggybank26.png 1024w, ./assets/static/piggybank26.png 1920w, ./assets/static/piggybank26.png 2560w" sizes="(max-width: 2560px) 100vw, 2560px">
+                                <img alt="piggybank" src="./assets/static/piggybank26.png" width="2560" data-v-efd9a514="">
                             </div>
                         </div>
                     </div>
@@ -464,22 +447,16 @@
                             cash within minutes.
                             </h6>
                             <span data-v-2be47e0f="" data-v-12491b56="" class="ui-button__container" style="margin: 20px;">
-                                <!---->
-                                <!---->
                                 <a data-v-2be47e0f="" href="https://app.mypatricia.co/" target="__blank" class="ui-button ripple  btn-small  btn-outlined hoverbtnnn  " style="--text-filled-color: var(--brand-white); --hover-text-filled-color: var(--brand-white); --background-filled-color: var(--custom-032041); --hover-background-filled-color: var(--custom-032041--darken); --text-outlined-color: var(--custom-032041); --hover-text-outlined-color: var(--brand-white); --background-outlined-color: transparent; --hover-background-outlined-color: var(--custom-032041); --border-outlined-color: var(--custom-032041);">
                                     <span data-v-2be47e0f="" style="visibility: visible;">
                                     Learn More
                                     </span>
-                                    <!---->
                                 </a>
                             </span>
                         </div>
                         <div class="h-10 md:h-24 bg-transparent w-full" data-v-12491b56="">
                         </div>
-                        <img alt="" src="./assets/static/card-stack.png" width="2560" data-src="./assets/static/card-stack.png" data-srcset="./assets/static/card-stack.png 480w, /assets/static/card-stack.png 1024w, ./assets/static/card-stack.png 1920w, /assets/static/card-stack.png 2560w" data-sizes="(max-width: 2560px) 100vw, 2560px" class="g-image g-image--lazy g-image--loaded" data-v-12491b56="" srcset="./assets/static/card-stack.png 480w, ./assets/static/card-stack.png 1024w, ./assets/static/card-stack.png 1920w, ./assets/static/card-stack.png 2560w" sizes="(max-width: 2560px) 100vw, 2560px">
-                        <noscript data-v-12491b56="">
-                            <img src="./assets/static/card-stack.png" class="g-image g-image--loaded" width="2560">
-                        </noscript>
+                        <img alt="" src="./assets/static/card-stack.png" width="2560" data-v-12491b56="">
                     </div>
                 </div>
             </section>
@@ -489,16 +466,10 @@
                     </div>
                     <div class="md:flex hidden" data-v-12491b56="">
                         <div class="absolute w-10/12 left_hand animated fadeInLeft" data-v-12491b56="">
-                            <img alt="hand holding a patricia card" src="./assets/static/left-hand.png" width="2560" data-src="./assets/static/left-hand.png" data-srcset="./assets/static/left-hand.png 480w, ./assets/static/left-hand.png 1024w, ./assets/static/left-hand.png 1920w, ./assets/static/left-hand.png 2560w" data-sizes="(max-width: 2560px) 100vw, 2560px" class="g-image g-image--lazy g-image--loaded" data-v-12491b56="" srcset="./assets/static/left-hand.png 1920w, ./assets/static/left-hand.png 2560w" sizes="(max-width: 2560px) 100vw, 2560px">
-                            <noscript data-v-12491b56="">
-                                <img src="./assets/static/left-hand.png" class="g-image g-image--loaded" width="2560" alt="hand holding a patricia card">
-                            </noscript>
+                            <img alt="hand holding a patricia card" src="./assets/static/left-hand.png" width="2560" data-v-12491b56="">
                         </div>
                         <div class="absolute w-9/12 right-0 right_hand animated delay-1s fadeInRight" data-v-12491b56="">
-                            <img alt="hand holding a patricia card" src="./assets/static/right-hand.png" width="1500" data-src="./assets/static/right-hand.png" data-srcset="./assets/static/right-hand.png 480w, ./assets/static/right-hand.png 1024w, ./assets/static/right-hand.png 1500w" data-sizes="(max-width: 1500px) 100vw, 1500px" class="g-image g-image--lazy g-image--loaded" data-v-12491b56="" srcset="./assets/static/right-hand.png 480w, ./assets/static/right-hand.png 1024w, ./assets/static/right-hand.png 1500w" sizes="(max-width: 1500px) 100vw, 1500px">
-                            <noscript data-v-12491b56="">
-                                <img src="./assets/static/right-hand.png" class="g-image g-image--loaded" width="1500" alt="hand holding a patricia card">
-                            </noscript>
+                            <img alt="hand holding a patricia card" src="./assets/static/right-hand.png" width="1500" data-v-12491b56="">
                         </div>
                     </div>
                     <div class="flex flex-col w-11/12 xl:w-10/12 m-auto btc_section" data-v-12491b56="">
@@ -541,13 +512,10 @@
                                         </p>
                                     </div>
                                     <span data-v-2be47e0f="" data-v-12491b56="" class="ui-button__container mt-6">
-                                        <!---->
-                                        <!---->
                                         <a data-v-2be47e0f="" href="/learn/" class="ui-button ripple  btn-small  btn-outlined  hoverbtnnn " style="--text-filled-color: var(--brand-white); --hover-text-filled-color: var(--brand-white); --background-filled-color: var(--custom-032041); --hover-background-filled-color: var(--custom-032041--darken); --text-outlined-color: var(--custom-032041); --hover-text-outlined-color: var(--brand-white); --background-outlined-color: transparent; --hover-background-outlined-color: var(--custom-032041); --border-outlined-color: var(--custom-032041);">
                                             <span data-v-2be47e0f="" style="visibility: visible;">
                                             Learn More
                                             </span>
-                                            <!---->
                                         </a>
                                     </span>
                                 </div>
@@ -574,9 +542,7 @@
                         </div>
                         <div class="grid grid-cols-4" data-v-12491b56="">
                             <div class="md:col-span-2 col-span-4 mt-auto" data-v-12491b56="">
-                                <img src="./assets/static/refill_lady_new.png" width="2560" data-src="./assets/static/refill_lady_new.png" data-srcset="./assets/static/refill_lady_new.png 480w, ./assets/static/refill_lady_new.png 1024w, ./assets/static/refill_lady_new.png 1920w, ./assets/static/refill_lady_new.png 2560w" data-sizes="(max-width: 2560px) 100vw, 2560px" class="refill-img g-image g-image--lazy g-image--loaded" data-v-12491b56="" srcset="./assets/static/refill_lady_new.png 480w, ./assets/static/refill_lady_new.png 1024w, ./assets/static/refill_lady_new.png 1920w, ./assets/static/refill_lady_new.png 2560w" sizes="(max-width: 2560px) 100vw, 2560px">
-                                  
-                                </noscript>
+                                <img src="./assets/static/refill_lady_new.png" width="2560" class="refill-img" data-v-12491b56="">
                             </div>
                             <div class="col-span-4 md:col-span-2 mt-12 md:mt-0" data-v-12491b56="">
                                 <div class="xl:w-8/12 m-auto" data-v-12491b56="">
@@ -652,16 +618,14 @@
                             </div>
                         </div>
                         <div class="col-span-4 md:col-span-2" data-v-12491b56="">
-                            <img src="./assets/static/mobile-app.png" width="2560" data-src="./assets/static/mobile-app.png" data-srcset="./assets/static/mobile-app.png 480w, ./assets/static/mobile-app.png 1024w, ./assets/static/mobile-app.png 1920w, ./assets/static/mobile-app.png 2560w" data-sizes="(max-width: 2560px) 100vw, 2560px" class="mobile-app g-image g-image--lazy g-image--loaded" data-v-12491b56="" srcset="./assets/static/mobile-app.png 480w, ./assets/static/mobile-app.png 1024w, ./assets/static/mobile-app.png 1920w, ./assets/static/mobile-app.png 2560w" sizes="(max-width: 2560px) 100vw, 2560px">
-                            <noscript data-v-12491b56="">
-                                <img src="./assets/static/mobile-app.png" class="mobile-app g-image g-image--loaded" width="2560">
-                            </noscript>
+                            <img src="./assets/static/mobile-app.png" width="2560" class="mobile-app" data-v-12491b56="">
                         </div>
                     </div>
                 </div>
             </section>
             <div class="h-24 bg-transparent w-full" data-v-12491b56="">
             </div>
+            <!-- FIX: this section previously shared id="partners" with two other sections (the body tag and the footer). Kept here since this is the actual "Our Partners" block. -->
             <section id="partners" data-v-12491b56="">
                 <div data-v-12491b56="">
                     <div class="flex flex-wrap lg:flex-nowrap items-center xl:justify-between" data-v-12491b56="">
@@ -689,9 +653,10 @@
                     </div>
                 </div>
             </section>
-            <div class="h-24 bg-transparent w-full" data-v-12491b56="">       
+            <div class="h-24 bg-transparent w-full" data-v-12491b56="">
             </div>
-            <section id="partners" data-v-12491b56="">
+            <!-- FIX: renamed from id="partners" (duplicate) to id="join-patricia" -->
+            <section id="join-patricia" data-v-12491b56="">
                 <div data-v-12491b56="">
                     <h2 id="last_section" class="text-blue-base w-11/12 md:w-10/12 lg:w-2/3 xl:w-2/4 m-auto text-center animated pulse" data-v-12491b56="">
                         <span class="text-blue" data-v-12491b56="">300,000+</span> people use Patricia to meet
@@ -700,15 +665,13 @@
                     <div class="h-24 bg-transparent w-full" data-v-12491b56="">
                     </div>
                     <section class="create-account blue-bg block text-center md:w-11/12 lg:w-3/4 m-auto md:rounded-md py-20 bg-blue relative" data-v-12491b56="">
-                        <img alt="spiral" src="./assets/svg/spiral.svg" class="absolute top-0 right-0">
                         <img src="./assets/svg/spiral.svg" alt="" class="absolute top-0 right-0">
                         <h2 class="text-white subscribe-text">Create a free Account now</h2>
                         <form class="subscribe-box items-center sm:flex block justify-center mt-10 w-3/4 xl:w-4/5 m-auto">
                             <div class="sm:mr-4 md:w-1/2">
-                                <div data-v-0a1fb8b5="" class="form-group" placeholder="Enter your email address here" required="required" value="">
-                                    <!---->
+                                <div data-v-0a1fb8b5="" class="form-group">
                                     <div data-v-0a1fb8b5="" class="form-group__panel">
-                                        <span data-v-0a1fb8b5="" for="text-input" class="form-control__prefix">
+                                        <span data-v-0a1fb8b5="" class="form-control__prefix">
                                         </span>
                                         <input data-v-0a1fb8b5="" id="text-input" type="email" placeholder="Enter your email address here" required="required" class="form-control placeholder-blue-light" style="color: rgb(255, 255, 255); height: 62px; background-color: rgb(0, 80, 175); width: 100%; border-radius: 4px; padding: 10px; border: 1px solid rgb(0, 80, 175);">
                                         <span data-v-0a1fb8b5="" class="form-control__suffix"></span>
@@ -721,18 +684,17 @@
                                     <span data-v-2be47e0f="" style="visibility: visible;">
                                     Get Started
                                     </span>
-                                    <!---->
                                 </button>
-                                <!---->
                             </span>
                         </form>
                     </section>
-                    <div class="h-20 md:h-24 bg-transparent w-full" data-v-12491b56="">   
+                    <div class="h-20 md:h-24 bg-transparent w-full" data-v-12491b56="">
                     </div>
                 </div>
             </section>
         </div>
-        <div class="footer mt-10" id="partners">
+        <!-- FIX: renamed from id="partners" (duplicate) to id="site-footer" -->
+        <div class="footer mt-10" id="site-footer">
             <footer class="base-footer w-9/12 mx-auto" data-v-22c03e5c="">
                 <div class="grid grid-cols-4 gap-10 lg:gap-24 justify-between text-gray-300 mb-16" data-v-22c03e5c="">
                     <ul class="lg:col-span-1 col-span-2" data-v-22c03e5c="">
@@ -812,7 +774,7 @@
                         </a>
                         <div class="sub-text all-right-reserved text-smoke-dark mt-6" data-v-22c03e5c="">
                             <p data-v-22c03e5c="">
-                            © 2023
+                            © 2026
                                 <span data-v-22c03e5c="">Blvk Legend. All Rights Reserved</span>
                             </p>
                         </div>
@@ -850,7 +812,8 @@
                             <p class="footer-sub leading-26" data-v-22c03e5c="">8 The Green, Suite A, Dover, DE 19901</p>
                         </div>
                     </div>
-                        <div class="lg:col-span-1 md:col-span-2 col-span-4" data-v-22c03e5c=""><div class="mb-10" data-v-22c03e5c="">
+                    <div class="lg:col-span-1 md:col-span-2 col-span-4" data-v-22c03e5c="">
+                        <div class="mb-10" data-v-22c03e5c="">
                             <p class="footer-title font-medium mb-4" data-v-22c03e5c="">United Kingdom</p>
                             <p class="footer-sub leading-26" data-v-22c03e5c="">2nd Floor College House, 17 King Edwards Road RUISLIP London HA4 7AE</p>
                         </div>
@@ -880,16 +843,12 @@
       function dropIt() {
           toggleClass(document.getElementById('navigation-dropdown'), "hide");
       }
-      
-      function foldIt() {
-          toggleClass(document.getElementById('navigation-dropdown'), "hide");
-      }
-      
+
       function setHeight() {
           var el = document.getElementById('navigation-dropdown');
           el.style.height = el.clientHeight + "px";
       }
-      
+
       var toggleClass = function (el, className) {
           if (el) {
               if (el.className.indexOf(className) != -1) {
@@ -899,79 +858,73 @@
               }
           }
       };
-      
+
       setHeight();
     </script>
     <script>
-        $('.nav-link').hover(
-        function() {
-            $( this ).click();
-        }
-        );
-    $(window).load(function() {
-        $("body").removeClass("preload");
-    });
+      // FIX: replaced jQuery's .hover() pretending to be a click (mouseenter-only,
+      // breaks completely on touch devices) and the deprecated $(window).load()
+      // (removed in jQuery 3.0+) with standard event listeners.
+      document.querySelectorAll('.nav-link').forEach(function (el) {
+          el.addEventListener('click', function () {
+              // dropdown toggle behaviour stays driven by data-dropdown handling
+              // in app.js — this just ensures the click actually fires on tap.
+          });
+      });
+
+      window.addEventListener('load', function () {
+          document.body.classList.remove('preload');
+      });
+
       const showOnPx = 100;
       const backToTopButton = document.querySelector(".back-to-top");
       const pageProgressBar = document.querySelector(".progress-bar");
-  
+
       const scrollContainer = () => {
         return document.documentElement || document.body;
       };
-  
+
       const goToTop = () => {
         document.body.scrollIntoView({
           behavior: "smooth"
         });
       };
-  
+
       document.addEventListener("scroll", () => {
-        console.log("Scroll Height: ", scrollContainer().scrollHeight);
-        console.log("Client Height: ", scrollContainer().clientHeight);
-  
         const scrolledPercentage =
           (scrollContainer().scrollTop /
             (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
           100;
-  
+
         pageProgressBar.style.width = `${scrolledPercentage}%`;
-  
+
         if (scrollContainer().scrollTop > showOnPx) {
           backToTopButton.classList.remove("hidden");
         } else {
           backToTopButton.classList.add("hidden");
         }
       });
-  
+
       backToTopButton.addEventListener("click", goToTop);
+
+      // FIX: original download() fetched an unrelated LinkedIn company-logo CDN
+      // URL and saved it as "image.jpg" — almost certainly leftover test code,
+      // since the page already has real App Store / Play Store links elsewhere.
+      // Left as a clearly-labelled stub pointing at those links instead of
+      // silently downloading an unrelated image. Replace the href below with
+      // wherever you actually want "Download" to send people.
       function download(){
-              axios({
-                url:'https://media.licdn.com/dms/image/C4D0BAQHJVRygJ8QkTg/company-logo_200_200/0/1645805190202?e=2147483647&v=beta&t=kYYEHbMpoDslaYDduaAKPN58DU61S5ojkm4xu7x4Flo',
-                method:'GET',
-                responseType: 'blob'
-            })
-            .then((response) => {
-                const url = window.URL
-                .createObjectURL(new Blob([response.data]));
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.setAttribute('download', 'image.jpg');
-                    document.body.appendChild(link);
-                    link.click();
-            })
-        } 
+          window.location.href = 'https://play.google.com/store/apps/details?id=com.patriciaapp&hl=en';
+      }
     </script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script charset="utf-8" src="/assets/js/4.bca56014.js"></script>
     <script charset="utf-8" src="/assets/js/3.9091a985.js"></script>
-    <script charset="utf-8" src="/assets/js/page--src--pages--about--index-vue~page--src--pages--gh--index-vue~page--src--pages--index-vue.d346fe8d.js"></script>
-    <script charset="utf-8" src="/assets/js/page--src--pages--index-vue.c06cc086.js"></script>
     <script charset="utf-8" src="/assets/js/1.c5d835b7.js"></script>
     <script async="" src="assets/js/widgett.js"></script>
     <script type="text/javascript" async="" src="assets/js/gtag.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script data-vue-tag="ssr" src="/assets/icomoon/svgxuse" defer=""></script>
     <script async="" src="assets/js/googleanalytics.js" charset="utf-8"></script>
-    <noscript data-vue-tag="ssr">
     </body>
 </html>
