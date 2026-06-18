@@ -1,0 +1,5 @@
+#Getstarted {
+    color: var(--text-filled-color)!important ;
+    border: 1px solid var(--background-filled-color)!important;
+    background: var(--background-filled-color)!important;
+}
