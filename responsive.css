@@ -903,10 +903,10 @@
         width: 62rem;
     }
     #btc_section{
-        width: 62rem;
+        width: 50rem;
     }
     #refill_section{
-        width: 62rem;
+        width: 50rem;
     }''
     .app-section{
         width: 62rem;
@@ -1820,16 +1820,16 @@
         width: 36rem;
     }
     #btc_section{
-        width: 36rem;
+        width: 25rem;
     }
     #refill_section{
-        width: 36rem;
+        width: 25rem;
     }
     .app-section{
         width: 36rem;
     }
     #partners{
-        width: 36rem;
+        width: 25rem;
     }
     #hamburger {
       display: block;
